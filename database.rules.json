@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "presence": {
+      "$studentId": {
+        ".read": true,
+        ".write": "auth != null"
+      }
+    },
+    "deviceApprovals": {
+      "$studentId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+  }
+}
